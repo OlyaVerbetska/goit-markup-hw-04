@@ -239,6 +239,7 @@ h3 {
 .team .list .item {
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin: 0px 30px 20px 0px;
+  padding-bottom: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -333,6 +334,7 @@ h3 {
 
   color: var(--contrast-white-color);
 }
+
 .footer .link {
   display: inline-block;
   font-style: normal;
@@ -349,8 +351,10 @@ h3 {
   margin-right: 70px;
 }
 
-.socials p {
-  font-family: Roboto;
+
+
+.social-text {
+font-family: Roboto;
 font-weight: 700;
 line-height: 16px;
 letter-spacing: 0.03em;
@@ -359,18 +363,59 @@ text-transform: uppercase;
 color:var(--contrast-white-color)
 
 }
-.socials .link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--bg-color-icon);
-  /* margin-right:10px; */
+/* Иконки соц сетей */
+
+.team .socials-list {
+  justify-content: center;
 }
 
 .socials-item:not(:last-child) {
   margin-right: 10px;
 }
+.socials-item .link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  
+}
+
+
+
+.team .socials-item .link {
+  background-color: yellow;
+}
+
+
+.footer .socials-item .link {
+  background-color: var(--bg-color-icon);
+}
+.socials-item .link:hover,
+.socials-item .link:focus {
+  background-color: var(--accent-color);
+}
+
+
+
+
+
+
+
+
+ 
+.footer .socials-list {
+  /* width: 20px;
+  justify-content: center; */
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Страница Портфолио */
