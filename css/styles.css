@@ -12,7 +12,7 @@
   --border-cards: #eeeeee;
   --header-border: #ececec;
   --border-clients: #afb1b8;
-  --bg-color-icon:rgba(255, 255, 255, 0.1);
+  --bg-color-icon: rgba(255, 255, 255, 0.1);
 }
 body {
   font-family: Roboto, sans-serif;
@@ -197,6 +197,32 @@ h3 {
 
   color: var(--title-text-color);
 }
+.features .item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+  background-color: var(--bg-color-light);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.features .item:nth-child(1)::before {
+  background-image: url(../images/feature-antenna.svg);
+}
+
+.features .item:nth-child(2)::before {
+  background-image: url(../images/feature-clock.svg);
+}
+
+.features .item:nth-child(3)::before {
+  background-image: url(../images/feature-diagram.svg);
+}
+
+.features .item:nth-child(4)::before {
+  background-image: url(../images/feature-astronaut.svg);
+}
 
 .features p {
   margin: 0px;
@@ -252,9 +278,6 @@ h3 {
 .team .list .item:nth-last-child(-n + 4) {
   margin-bottom: 0px;
 }
-/* .team-avatar {
-  margin-bottom: 30px;
-} */
 
 .team-text {
   padding: 30px 0px;
@@ -279,6 +302,7 @@ h3 {
   line-height: 1.19;
   color: var(--text-color);
 }
+
 /* Клиенты */
 .clients .list {
   flex-wrap: wrap;
@@ -351,18 +375,16 @@ h3 {
   margin-right: 70px;
 }
 
-
-
 .social-text {
-font-family: Roboto;
-font-weight: 700;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-color:var(--contrast-white-color)
-
+  color: var(--contrast-white-color);
 }
+
 /* Иконки соц сетей */
 
 .team .socials-list {
@@ -377,15 +399,11 @@ color:var(--contrast-white-color)
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  
 }
-
-
 
 .team .socials-item .link {
   background-color: yellow;
 }
-
 
 .footer .socials-item .link {
   background-color: var(--bg-color-icon);
@@ -394,29 +412,6 @@ color:var(--contrast-white-color)
 .socials-item .link:focus {
   background-color: var(--accent-color);
 }
-
-
-
-
-
-
-
-
- 
-.footer .socials-list {
-  /* width: 20px;
-  justify-content: center; */
-}
-
-
-
-
-
-
-
-
-
-
 
 /* Страница Портфолио */
 .portfolio {
