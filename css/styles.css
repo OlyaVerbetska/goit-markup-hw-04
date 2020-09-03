@@ -430,8 +430,13 @@ h3 {
 
   color: var(--contrast-white-color);
 }
+.link.mail {
+  display: inline-block;
+  margin-bottom: 9px;
+}
 
 .footer .link {
+ 
   font-style: normal;
   line-height: 1.71;
 
