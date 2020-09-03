@@ -431,6 +431,7 @@ h3 {
   color: var(--contrast-white-color);
 }
 .link.mail {
+  
   display: inline-block;
   margin-bottom: 9px;
 }
@@ -452,7 +453,7 @@ h3 {
 }
 
 .social-text {
-  font-family: Roboto;
+  
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
